@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "a backend api for messenger",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "messenger",
+    "chat",
+    "api",
+    "real_time",
+    "websocket"
+  ],
+  "author": "omid obeidzadeh <omidobeidzadeh@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.2",
+    "mongoose": "^6.2.10",
+    "mysql2": "^2.3.3",
+    "peer": "^0.6.1",
+    "sequelize": "^5.19.2"
+  }
+}
