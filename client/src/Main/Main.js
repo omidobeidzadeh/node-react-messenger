@@ -18,6 +18,7 @@ class Main extends Component {
     this.locationService = new LocationService()
   }
   componentDidMount() {
+    this.props.init();
     eva.replace();
   }
   getMainRender() {

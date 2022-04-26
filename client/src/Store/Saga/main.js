@@ -7,7 +7,12 @@ const httpService = new HttpService();
 const initWorker = function* (action) {
   try {
     const result = yield call(() => {
-      return httpService.post("account/init", action.payload);
+      const token = localStorage.getItem('token')
+      return httpService.post("init", action.payload, {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
     });
     yield put({
       type: mainActions.INIT_SUCCESS,
